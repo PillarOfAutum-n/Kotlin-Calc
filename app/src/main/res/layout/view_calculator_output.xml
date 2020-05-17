@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    toolsns:orientation="vertical"
+    toolsns:gravity="center_vertical"
+    toolsns:parentTag="android.widget.LinearLayout"
     xmlns:toolsns="http://schemas.android.com/tools">
 
     <!-- Tools sólo afecta al preview, no tiene repercución en la comptlación -->
@@ -13,9 +17,21 @@
         android:gravity="end"
         android:maxLines="3"
         android:padding="16dp"
-        toolsns:text="7*7"
+        toolsns:text="OwO"
         android:textColor="@color/colorText"
         android:textSize="@dimen/textSizeCalculatorEquation">
     </androidx.appcompat.widget.AppCompatAutoCompleteTextView>
 
-</LinearLayout>
+    <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+        android:id="@+id/calculator_input_outcome"
+        android:layout_gravity="end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:padding="16dp"
+        toolsns:text="UwU"
+        android:textColor="@color/colorText"
+        android:textSize="@dimen/textSizeCalculatorOutcome">
+    </androidx.appcompat.widget.AppCompatAutoCompleteTextView>
+
+</merge>
