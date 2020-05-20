@@ -21,7 +21,7 @@
         tools:src="@drawable/ic_trash">
     </androidx.appcompat.widget.AppCompatImageView>
 
-    <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/input_element_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
