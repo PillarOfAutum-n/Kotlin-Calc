@@ -5,8 +5,7 @@ import android.util.AttributeSet
 import android.view.LayoutInflater
 import android.view.View
 import android.widget.RelativeLayout
-import kotlinx.android.synthetic.main.view_calculator_input.view.input_element_image
-import kotlinx.android.synthetic.main.view_calculator_input.view.input_element_text
+import kotlinx.android.synthetic.main.view_calculator_input.view.*
 
 class CalculatorInputView(context: Context, attributeSet: AttributeSet) : RelativeLayout(context, attributeSet) {
     init {
@@ -41,4 +40,9 @@ class CalculatorInputView(context: Context, attributeSet: AttributeSet) : Relati
             typedArray.recycle()
         }
     }
+
+    override fun setOnClickListener(l: OnClickListener?) {
+        input_element_click.setOnClickListener(l)
+    }
+
 }

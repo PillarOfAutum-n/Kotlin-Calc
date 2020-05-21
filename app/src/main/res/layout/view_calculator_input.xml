@@ -2,10 +2,10 @@
 <merge xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools"
-    tools:parentTag="android.widget.RelativeLayout">
+    tools:parentTag="android.widget.RelativeLayout"
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <view
+    <View
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/colorTileBackground"
@@ -31,8 +31,8 @@
         android:textStyle="bold"
         tools:text="1"
         />
-    
-    <view
+
+    <View
         android:id="@+id/input_element_click"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

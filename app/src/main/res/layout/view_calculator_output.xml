@@ -9,7 +9,7 @@
     xmlns:toolsns="http://schemas.android.com/tools">
 
     <!-- Tools sólo afecta al preview, no tiene repercución en la comptlación -->
-    <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/calculator_input_equation"
         android:layout_gravity="end"
         android:layout_width="wrap_content"
@@ -20,9 +20,9 @@
         toolsns:text="OwO"
         android:textColor="@color/colorText"
         android:textSize="@dimen/textSizeCalculatorEquation">
-    </androidx.appcompat.widget.AppCompatAutoCompleteTextView>
+    </androidx.appcompat.widget.AppCompatTextView>
 
-    <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/calculator_input_outcome"
         android:layout_gravity="end"
         android:layout_width="wrap_content"
@@ -32,6 +32,6 @@
         toolsns:text="UwU"
         android:textColor="@color/colorText"
         android:textSize="@dimen/textSizeCalculatorOutcome">
-    </androidx.appcompat.widget.AppCompatAutoCompleteTextView>
+    </androidx.appcompat.widget.AppCompatTextView>
 
 </merge>
