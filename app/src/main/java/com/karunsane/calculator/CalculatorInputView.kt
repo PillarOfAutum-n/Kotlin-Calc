@@ -9,7 +9,6 @@ import kotlinx.android.synthetic.main.view_calculator_input.view.*
 
 class CalculatorInputView(context: Context, attributeSet: AttributeSet) : RelativeLayout(context, attributeSet) {
     init {
-        //Linea para PR
         LayoutInflater.from(context).inflate(R.layout.view_calculator_input,this,true)
         //Read attribute set
         attributeSet.run {
