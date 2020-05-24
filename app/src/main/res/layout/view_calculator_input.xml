@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:parentTag="android.widget.RelativeLayout"
-    xmlns:tools="http://schemas.android.com/tools">
+    tools:parentTag="android.widget.RelativeLayout">
 
     <View
         android:layout_width="match_parent"
@@ -11,7 +11,7 @@
         android:background="@color/colorTileBackground"
         />
 
-    <androidx.appcompat.widget.AppCompatImageView
+    <ImageView
         android:id="@+id/input_element_image"
         android:layout_width="@dimen/sizeIcon"
         android:layout_height="@dimen/sizeIcon"
@@ -19,9 +19,9 @@
         android:tint="@color/colorImage"
         tools:ignore="ContentDescription"
         tools:src="@drawable/ic_trash">
-    </androidx.appcompat.widget.AppCompatImageView>
+    </ImageView>
 
-    <androidx.appcompat.widget.AppCompatTextView
+    <TextView
         android:id="@+id/input_element_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -29,8 +29,7 @@
         android:textColor="@color/colorText"
         android:textSize="@dimen/textSizeInputElement"
         android:textStyle="bold"
-        tools:text="1"
-        />
+        tools:text="1" />
 
     <View
         android:id="@+id/input_element_click"
@@ -38,7 +37,6 @@
         android:layout_height="match_parent"
         android:background="?selectableItemBackground"
         android:clickable="true"
-        android:focusable="true"
-        />
+        android:focusable="true" />
 
 </merge>
