@@ -36,4 +36,6 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
     //js dependency
     implementation "org.beanshell:bsh:2.0b4"
+    //test
+    testImplementation 'org.mockito:mockito-core:1.10.19'
 }
