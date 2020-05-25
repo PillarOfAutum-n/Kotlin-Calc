@@ -33,7 +33,7 @@ object CalculatorOutputPresenter {
     }
 
     fun solve(){
-        if (mnCurrentOutcome.isEmpty()){
+        if (mnCurrentOutcome.isNotEmpty()){
             mnCurrentEquation = mnCurrentOutcome
             mnCurrentOutcome = ""
 
