@@ -21,6 +21,7 @@ class MainActivity : AppCompatActivity() {
         key_7.setOnClickListener{output_layout.addItem("7")}
         key_8.setOnClickListener{output_layout.addItem("8")}
         key_9.setOnClickListener{output_layout.addItem("9")}
+        key_dot.setOnClickListener{output_layout.addItem(".")}
 
         //operators
         key_divide.setOnClickListener{output_layout.addItem("/")}

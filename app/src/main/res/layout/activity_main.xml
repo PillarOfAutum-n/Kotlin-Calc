@@ -110,7 +110,7 @@
         android:layout_height="0dp"
         app:item_text="0"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/key_space"
+        app:layout_constraintEnd_toStartOf="@id/key_dot"
         app:layout_constraintStart_toEndOf="@id/key_percent"
         app:layout_constraintTop_toBottomOf="@id/key_2" />
 
@@ -149,16 +149,16 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:item_text="3"
-        app:layout_constraintBottom_toTopOf="@id/key_space"
+        app:layout_constraintBottom_toTopOf="@id/key_dot"
         app:layout_constraintEnd_toStartOf="@id/key_equal"
         app:layout_constraintStart_toEndOf="@id/key_2"
         app:layout_constraintTop_toBottomOf="@id/key_6" />
 
-    <View
-        android:id="@+id/key_space"
+    <com.karunsane.calculator.CalculatorInputView
+        android:id="@+id/key_dot"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:background="@color/colorTileBackground"
+        app:item_text="."
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@id/key_equal"
         app:layout_constraintStart_toEndOf="@id/key_0"
