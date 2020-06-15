@@ -4,7 +4,6 @@
     <declare-styleable name="CalculatorInputView">
         <attr name="item_text" format="string"/>
         <attr name="item_icon" format="reference"/>
-
     </declare-styleable>
 
 </resources>

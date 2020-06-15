@@ -5,7 +5,9 @@ import android.util.AttributeSet
 import android.view.LayoutInflater
 import android.view.View
 import android.widget.RelativeLayout
-import kotlinx.android.synthetic.main.view_calculator_input.view.*
+import kotlinx.android.synthetic.main.view_calculator_input.view.input_element_image
+import kotlinx.android.synthetic.main.view_calculator_input.view.input_element_text
+import kotlinx.android.synthetic.main.view_calculator_input.view.input_element_click
 
 class CalculatorInputView(context: Context, attributeSet: AttributeSet) : RelativeLayout(context, attributeSet) {
     init {
@@ -17,7 +19,7 @@ class CalculatorInputView(context: Context, attributeSet: AttributeSet) : Relati
             val iconResource = typedArray.getResourceId(R.styleable.CalculatorInputView_item_icon, -1)
 
             when {
-                iconResource != 1 -> {
+                iconResource != -1 -> {
                     input_element_text.visibility = View.GONE
                     input_element_image.apply {
                         visibility = View.VISIBLE
